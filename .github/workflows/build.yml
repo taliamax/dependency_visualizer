@@ -17,7 +17,7 @@ jobs:
           python-version: ${{ matrix.python }}
 
       - name: Install graphviz
-        run: apt-get install graphviz
+        run: sudo apt-get install graphviz
 
       - name: Install dependencies and script
         run: pip install .[tests]
